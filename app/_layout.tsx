@@ -55,6 +55,14 @@ function RootNavigator() {
         <Stack.Screen name="index" options={{ headerShown: false }} />
         <Stack.Screen name="settings" options={{ title: t('settingsTitle') }} />
         <Stack.Screen
+          name="course"
+          options={{ title: '', presentation: 'modal', headerShown: false }}
+        />
+        <Stack.Screen
+          name="projector"
+          options={{ title: '', presentation: 'modal', headerShown: false }}
+        />
+        <Stack.Screen
           name="paywall"
           options={{ title: '', presentation: 'modal', headerShown: false }}
         />
