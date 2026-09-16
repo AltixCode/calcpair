@@ -16,6 +16,7 @@ import { showInterstitial } from '@/monetization/interstitial';
 import { useCalcStore } from '@/store/useCalcStore';
 import { usePremiumStore } from '@/store/usePremiumStore';
 import { MIN_TOUCH_TARGET, useTheme } from '@/theme';
+import { useTabletColumn } from '@/theme/useTabletColumn';
 
 type Tab = 'bmi' | 'gpa';
 
@@ -23,6 +24,7 @@ export default function Home() {
   const router = useRouter();
   const insets = useSafeAreaInsets();
   const { colors, spacing } = useTheme();
+  const tabletColumn = useTabletColumn();
 
   const hydrate = useCalcStore((s) => s.hydrate);
   const history = useCalcStore((s) => s.history);
@@ -73,6 +75,7 @@ export default function Home() {
           paddingTop: insets.top + spacing.base,
           paddingHorizontal: spacing.base,
           paddingBottom: spacing.xl,
+          ...tabletColumn,
         }}
         showsVerticalScrollIndicator={false}
       >
