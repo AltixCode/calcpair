@@ -12,12 +12,15 @@ import { FREE_SEMESTERS, isUnlocked } from '@/logic/limits';
 import { useCalcStore } from '@/store/useCalcStore';
 import { usePremiumStore } from '@/store/usePremiumStore';
 import { MIN_TOUCH_TARGET, useTheme, withAlpha } from '@/theme';
+import { useTabletColumn } from '../src/theme/useTabletColumn';
 
 /** The default semester name when the user has not created one yet. */
 const FIRST_SEMESTER = '1';
 
 export default function CourseForm() {
   const router = useRouter();
+
+  const tabletColumn = useTabletColumn();
   const insets = useSafeAreaInsets();
   const { colors, spacing, radius } = useTheme();
   const params = useLocalSearchParams<{ id?: string }>();
@@ -82,7 +85,7 @@ export default function CourseForm() {
           paddingHorizontal: spacing.base,
           paddingBottom: insets.bottom + spacing.xl,
           gap: spacing.base,
-        }}
+         ...tabletColumn }}
       >
         <Field label={t('courseName')} value={name} onChangeText={setName} keyboardType="default" autoFocus />
 
