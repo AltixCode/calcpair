@@ -1,0 +1,35 @@
+{
+  "identifier": "C8251E62-4C71-4E2B-A23B-B99D1B96685F",
+  "nonRenewingSubscriptions": [],
+  "products": [
+    {
+      "displayPrice": "4.99",
+      "familyShareable": false,
+      "internalID": "D74ECA4C-AAE4-461B-889C-9486556C733E",
+      "localizations": [
+        {
+          "description": "calcpair remove ads lifetime unlock",
+          "displayName": "calcpair remove ads",
+          "locale": "en_US"
+        }
+      ],
+      "productID": "com.altixcode.calcpair.removeads",
+      "referenceName": "calcpair remove ads",
+      "type": "NonConsumable"
+    }
+  ],
+  "settings": {
+    "_applicationInternalID": "",
+    "_developerTeamID": "",
+    "_failTransactionsEnabled": false,
+    "_lastSynchronizedDate": 0,
+    "_locale": "en_US",
+    "_storefront": "USA",
+    "_storeKitErrors": []
+  },
+  "subscriptionGroups": [],
+  "version": {
+    "major": 4,
+    "minor": 0
+  }
+}
